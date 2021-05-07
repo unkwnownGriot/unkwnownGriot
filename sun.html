@@ -1,0 +1,32 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Sun animation</title>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="ombre"></div>
+    <button class="check">light mode</button>
+    
+</body>
+</html>
+<script>
+   const content = document.getElementsByTagName('body');
+    const container = document.getElementsByClassName('container');
+    const check = document.getElementsByClassName("check");
+    check.addEventListener('click',function(){
+          
+       const notif = document.createElement("div");
+        notif.classList.add('active');
+        content.appendChild(notif);
+        
+        notif.innerText='hello folks';
+        
+
+
+    })
+   
+</script>
